@@ -68,4 +68,9 @@ public class ESedexCEPCheckingTest {
 	public void shouldntAcceptBlankNotTrimmedCEP() {
 		ESedexCEPCheckingTest.cepChecking.check(" ");
 	}
+
+	@Test(expected = NumberFormatException.class)
+	public void shouldntAcceptNonNumericCEP() {
+		ESedexCEPCheckingTest.cepChecking.check("08o43546");
+	}
 }
