@@ -1,0 +1,5 @@
+bin/
+#ignore the eclipse configuration files
+.classpath
+.project
+.settings/
