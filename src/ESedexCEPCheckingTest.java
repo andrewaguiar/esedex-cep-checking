@@ -9,9 +9,6 @@ public class ESedexCEPCheckingTest {
 	@BeforeClass
 	public static void createChecker() throws Exception {
 		ESedexCEPCheckingTest.cepChecking = new ESedexCEPChecking();
-
-		final CEPStatus cepStatus = ESedexCEPCheckingTest.cepChecking.check("19400000");
-		System.out.println(cepStatus);
 	}
 
 	@Test
